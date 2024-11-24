@@ -19,6 +19,9 @@
         "walkerchiu/php-morph-registration": "^1.0",
         "walkerchiu/php-role": "^1.0"
     },
+    "require-dev": {
+        "orchestra/testbench": "^5.0"
+    },
     "suggest": {
         "walkerchiu/php-api": "^1.0",
         "walkerchiu/php-morph-board": "^1.0",
