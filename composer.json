@@ -11,25 +11,25 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.3",
-        "walkerchiu/php-account": "^1.0",
-        "walkerchiu/php-morph-address": "^1.0",
-        "walkerchiu/php-morph-image": "^1.0",
-        "walkerchiu/php-morph-nav": "^1.0",
-        "walkerchiu/php-morph-registration": "^1.0",
-        "walkerchiu/php-role": "^1.0"
+        "php": "^7.4|^8.0",
+        "walkerchiu/php-account": "^1.1",
+        "walkerchiu/php-morph-address": "^1.1",
+        "walkerchiu/php-morph-image": "^1.1",
+        "walkerchiu/php-morph-nav": "^1.1",
+        "walkerchiu/php-morph-registration": "^1.1",
+        "walkerchiu/php-role": "^1.1"
     },
     "require-dev": {
         "orchestra/testbench": "^5.0"
     },
     "suggest": {
-        "walkerchiu/php-api": "^1.0",
-        "walkerchiu/php-morph-board": "^1.0",
-        "walkerchiu/php-morph-comment": "^1.0",
-        "walkerchiu/php-morph-category": "^1.0",
-        "walkerchiu/php-morph-link": "^1.0",
-        "walkerchiu/php-morph-tag": "^1.0",
-        "walkerchiu/php-newsletter": "^1.0"
+        "walkerchiu/php-api": "^1.1",
+        "walkerchiu/php-morph-board": "^1.1",
+        "walkerchiu/php-morph-comment": "^1.1",
+        "walkerchiu/php-morph-category": "^1.1",
+        "walkerchiu/php-morph-link": "^1.1",
+        "walkerchiu/php-morph-tag": "^1.1",
+        "walkerchiu/php-newsletter": "^1.1"
     },
     "autoload": {
         "psr-4": {
