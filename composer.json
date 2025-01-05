@@ -16,7 +16,6 @@
         "walkerchiu/php-morph-address": "^1.1",
         "walkerchiu/php-morph-image": "^1.1",
         "walkerchiu/php-morph-nav": "^1.1",
-        "walkerchiu/php-morph-registration": "^1.1",
         "walkerchiu/php-role": "^1.1"
     },
     "require-dev": {
@@ -28,6 +27,7 @@
         "walkerchiu/php-morph-comment": "^1.1",
         "walkerchiu/php-morph-category": "^1.1",
         "walkerchiu/php-morph-link": "^1.1",
+        "walkerchiu/php-morph-registration": "^1.1",
         "walkerchiu/php-morph-tag": "^1.1",
         "walkerchiu/php-newsletter": "^1.1"
     },
