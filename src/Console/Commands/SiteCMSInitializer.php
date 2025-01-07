@@ -4,8 +4,10 @@ namespace WalkerChiu\SiteCMS\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Artisan;
 use WalkerChiu\SiteCMS\Models\Services\EmailTemplateService;
+use Ramsey\Uuid\Uuid;
 
 class SiteCMSInitializer extends Command
 {
@@ -52,6 +54,7 @@ class SiteCMSInitializer extends Command
 
         // Create Main Site
         $data = [
+            'id'                 => Uuid::uuid4()->toString(),
             'identifier'         => config('wk-site-cms.initializer.site.identifier'),
             'language'           => config('wk-site-cms.initializer.site.language'),
             'language_supported' => config('wk-site-cms.initializer.site.language_supported'),
@@ -75,8 +78,11 @@ class SiteCMSInitializer extends Command
         ]);
         $this->info(config('wk-core.table.site-cms.sites') .' have been affected.');
         $this->info(config('wk-core.table.site-cms.sites_lang') .' have been affected.');
-        $this->info(config('wk-core.table.morph-image.images') .' have been affected.');
-        $this->info(config('wk-core.table.morph-image.images_lang') .' have been affected.');
+
+        if (config('wk-site-cms.onoff.morph-image')) {
+            $this->info(config('wk-core.table.morph-image.images') .' have been affected.');
+            $this->info(config('wk-core.table.morph-image.images_lang') .' have been affected.');
+        }
 
         if (config('wk-site-cms.initializer.site.default_data.address')) {
             $this->initializeAddress('site', $site->id);

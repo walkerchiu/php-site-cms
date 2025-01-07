@@ -4,10 +4,12 @@ namespace WalkerChiu\SiteCMS\Models\Entities;
 
 use WalkerChiu\Core\Models\Entities\LangTrait;
 use WalkerChiu\Core\Models\Entities\UuidEntity;
+use WalkerChiu\MorphImage\Models\Entities\ImageTrait;
 
-class Site extends UuidEntity
+class SiteWithImage extends UuidEntity
 {
     use LangTrait;
+    use ImageTrait;
 
 
 
